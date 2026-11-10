@@ -200,3 +200,66 @@ section { padding: 80px 0; }
   .ambient .float { animation: none; }
 }
 .doc h3 { font-family: var(--font-heading); font-size: 1.02rem; margin: 22px 0 6px; letter-spacing: -0.01em; }
+
+/* Real-looking covers (original artwork created for Runout) */
+.spine {
+  background-size: cover;
+  background-position: center;
+  display: block;
+}
+.spine b, .spine small {
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  text-shadow: 0 1px 3px #000, 0 0 9px rgb(0 0 0 / 85%);
+}
+.spine b {
+  top: 14px;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  writing-mode: vertical-rl;
+  font-family: var(--font-heading);
+  font-size: 0.6rem;
+  font-weight: 700;
+  line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.spine small {
+  left: 4px;
+  right: 4px;
+  bottom: 8px;
+  font-size: 0.4rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mini-player img.art { object-fit: cover; }
+.ambient .float { object-fit: cover; }
+
+.device.wide .screen { aspect-ratio: 16 / 10; }
+.gallery-screen { grid-template-rows: auto 1fr; }
+.cover-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  padding: 18px 22px;
+  overflow: hidden;
+}
+.cover-grid figure { margin: 0; min-width: 0; }
+.cover-grid img { width: 100%; aspect-ratio: 1; border-radius: 6px; box-shadow: 0 10px 26px rgb(0 0 0 / 50%); }
+.cover-grid figcaption { margin-top: 8px; display: grid; }
+.cover-grid strong, .cover-grid small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cover-grid strong { font-size: 0.68rem; }
+.cover-grid small { font-size: 0.56rem; color: var(--muted); }
+.art-note { margin-top: 16px; color: #7d7a76; font-size: 0.78rem; }
+
+@media (max-width: 900px) {
+  .cover-grid { grid-template-columns: repeat(3, 1fr); }
+  .cover-grid figure:nth-child(n + 7) { display: none; }
+  .spine b { font-size: 0.5rem; }
+}

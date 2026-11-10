@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+<defs><filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.16 0"/></filter><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6b37a"/><stop offset="0.6" stop-color="#e9765a"/><stop offset="1" stop-color="#8e3b46"/></linearGradient></defs>
+<rect width="600" height="600" fill="url(#sky)"/>
+<circle cx="300" cy="330" r="130" fill="#ffd9a0"/>
+<rect y="360" width="600" height="240" fill="#1d2b3a"/>
+<rect x="150" y="372" width="300" height="6.0" fill="#ffd9a0" opacity="0.80"/><rect x="138" y="388" width="324" height="5.5" fill="#ffd9a0" opacity="0.70"/><rect x="126" y="404" width="348" height="5.0" fill="#ffd9a0" opacity="0.60"/><rect x="114" y="420" width="372" height="4.5" fill="#ffd9a0" opacity="0.50"/><rect x="102" y="436" width="396" height="4.0" fill="#ffd9a0" opacity="0.40"/><rect x="90" y="452" width="420" height="3.5" fill="#ffd9a0" opacity="0.30"/><rect x="78" y="468" width="444" height="3.0" fill="#ffd9a0" opacity="0.20"/>
+<text x="40" y="70" font-family="Helvetica Neue, Arial, sans-serif" font-size="22" font-weight="600" fill="#2b1a12" text-anchor="start" letter-spacing="6" >MARISOL VEGA</text><text x="40" y="104" font-family="Georgia, serif" font-size="30" font-weight="300" fill="#2b1a12" text-anchor="start" letter-spacing="0" >Golden Hour Tapes</text>
+<rect width="600" height="600" filter="url(#grain)"/>
+</svg>
