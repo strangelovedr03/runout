@@ -263,3 +263,35 @@ section { padding: 80px 0; }
   .cover-grid figure:nth-child(n + 7) { display: none; }
   .spine b { font-size: 0.5rem; }
 }
+
+/* Photos */
+.photo { margin: 0; overflow: hidden; border-radius: 24px; border: 1px solid var(--line); box-shadow: 0 40px 90px rgb(0 0 0 / 55%); }
+.photo img { width: 100%; height: auto; }
+.photo-band { padding-top: 0; }
+
+/* Ambient Mode with photo */
+.ambient-split { display: grid; grid-template-columns: 1fr 1.05fr; gap: 48px; align-items: center; }
+.ambient-split .content { max-width: none; }
+.ambient-points { margin: 22px 0 0; padding: 0; list-style: none; display: grid; gap: 12px; color: var(--muted); font-size: 0.95rem; }
+.ambient-points strong { color: var(--text); }
+
+/* Hand gestures */
+.gesture-columns { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.gesture-group { padding: 26px; border-radius: var(--radius); border: 1px solid var(--line); background: var(--surface); }
+.gesture-group h3 { font-size: 1.1rem; margin-bottom: 16px; }
+.gestures { margin: 0; padding: 0; list-style: none; display: grid; gap: 16px; }
+.gestures li { display: flex; gap: 16px; align-items: flex-start; }
+.gestures .hand {
+  flex: none; display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%;
+  border: 1px solid rgb(215 173 101 / 45%); background: rgb(215 173 101 / 8%); font-size: 1.3rem;
+}
+.gestures strong { display: block; font-size: 0.98rem; }
+.gestures p { margin: 2px 0 0; color: var(--muted); font-size: 0.9rem; }
+.gesture-privacy { margin: 22px 0 0; max-width: 46rem; color: var(--muted); font-size: 0.88rem; }
+
+@media (max-width: 900px) {
+  .ambient-split { grid-template-columns: 1fr; gap: 32px; }
+  .ambient-split.ambient { padding: 40px 20px; }
+  .gesture-columns { grid-template-columns: 1fr; }
+  .gesture-group { padding: 20px; }
+}

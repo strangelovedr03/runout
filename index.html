@@ -6,16 +6,16 @@
     <title>Runout — Every album, to the last groove</title>
     <meta
       name="description"
-      content="Runout turns a tablet into a record shelf for your TIDAL and Apple Music albums, with full-length Apple Music playback, an ambient display and a night-ready dedicated mode."
+      content="Runout turns a tablet into a record shelf for your TIDAL and Apple Music albums, with full-length Apple Music playback, an ambient display you can control with hand gestures and a night-ready dedicated mode."
     />
     <meta property="og:title" content="Runout — Every album, to the last groove" />
     <meta property="og:description" content="Your saved albums as a warm, physical-feeling record shelf on iPad and Android tablets." />
-    <meta property="og:image" content="assets/app-icon.png" />
+    <meta property="og:image" content="assets/photos/runout-shelf-og.jpg" />
     <link rel="icon" href="assets/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@300;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/styles.css?v=3" />
+    <link rel="stylesheet" href="assets/styles.css?v=4" />
   </head>
   <body>
     <header class="site-header">
@@ -26,6 +26,7 @@
           <a href="#gallery">Gallery</a>
           <a href="#services">Services</a>
           <a href="#ambient">Ambient Mode</a>
+          <a href="#gestures">Gestures</a>
           <a href="support.html">Support</a>
         </nav>
       </div>
@@ -61,6 +62,20 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="photo-band" aria-label="Runout on a shelf">
+        <div class="wrap">
+          <figure class="photo">
+            <img
+              src="assets/photos/runout-shelf.webp"
+              alt="An iPad on a wooden stand next to a bookshelf speaker, showing Runout's illuminated record shelf and an album ready to play"
+              width="1448"
+              height="1086"
+              loading="lazy"
+            />
+          </figure>
         </div>
       </section>
 
@@ -119,7 +134,7 @@
               <div class="cover-grid"><figure><img src="assets/covers/golden-hour.svg" alt="" loading="lazy" /><figcaption><strong>Golden Hour Tapes</strong><small>Marisol Vega · 2019</small></figcaption></figure><figure><img src="assets/covers/concentric.svg" alt="" loading="lazy" /><figcaption><strong>Concentric</strong><small>The Orbitals · 1974</small></figcaption></figure><figure><img src="assets/covers/blue-hour-session.svg" alt="" loading="lazy" /><figcaption><strong>Blue Hour</strong><small>The August Quartet · 1961</small></figcaption></figure><figure><img src="assets/covers/northern-lines.svg" alt="" loading="lazy" /><figcaption><strong>Northern Lines</strong><small>Kestrel Radio · 2004</small></figcaption></figure><figure><img src="assets/covers/high-country.svg" alt="" loading="lazy" /><figcaption><strong>High Country</strong><small>Juniper · 2016</small></figcaption></figure><figure><img src="assets/covers/night-shift.svg" alt="" loading="lazy" /><figcaption><strong>Night Shift</strong><small>The Late Arrivals · 1986</small></figcaption></figure><figure><img src="assets/covers/tidewater.svg" alt="" loading="lazy" /><figcaption><strong>Tidewater</strong><small>Salt & Signal · 2021</small></figcaption></figure><figure><img src="assets/covers/bauhaus.svg" alt="" loading="lazy" /><figcaption><strong>Form & Function</strong><small>The Dessau Set · 1979</small></figcaption></figure><figure><img src="assets/covers/lunar-choir.svg" alt="" loading="lazy" /><figcaption><strong>Lunar Choir</strong><small>Lunar Choir · 2012</small></figcaption></figure><figure><img src="assets/covers/paper-rooms.svg" alt="" loading="lazy" /><figcaption><strong>Paper Rooms</strong><small>Elliot Marsh · 1997</small></figcaption></figure></div>
             </div>
           </div>
-          <p class="art-note">Album artwork shown on this site is original, created for Runout. In the app you see your own albums' covers.</p>
+          <p class="art-note">The screen illustrations on this site use original artwork created for Runout. Photos show Runout with a real collection; album artwork belongs to its respective owners.</p>
         </div>
       </section>
 
@@ -149,20 +164,69 @@
 
       <section id="ambient">
         <div class="wrap">
-          <div class="ambient">
-            <img class="float f1" src="assets/covers/lunar-choir.svg" alt="" aria-hidden="true" />
-            <img class="float f2" src="assets/covers/tidewater.svg" alt="" aria-hidden="true" />
-            <img class="float f3" src="assets/covers/golden-hour.svg" alt="" aria-hidden="true" />
+          <div class="ambient ambient-split">
             <div class="content">
               <p class="eyebrow">Ambient Mode</p>
               <h2>When nobody is touching it, it becomes art.</h2>
               <p class="lead">
-                After a while, your covers drift slowly across the screen. Drag one with your finger and throw it, or tap
-                it to play. The clock moves a little every minute so a display that's always on stays pristine.
+                After a while, your covers take over the screen. Let them drift and throw them with a finger, show one at a
+                time like a picture frame, or build a slowly flipping wall of covers. The background takes on the colors of
+                your artwork, and at night everything gets calmer and dimmer.
               </p>
+              <ul class="ambient-points">
+                <li><strong>Now Playing.</strong> Start an Apple Music album and Ambient Mode turns into a turntable: the record spins next to its sleeve, with play, pause and skip, until you close it.</li>
+                <li><strong>Always pristine.</strong> The clock moves a little every minute so a display that's always on never burns in.</li>
+              </ul>
               <time>21:48</time>
             </div>
+            <figure class="photo">
+              <img
+                src="assets/photos/runout-ambient.webp"
+                alt="Runout's Ambient Mode on an iPad: dozens of album covers floating across a dark screen next to a speaker"
+                width="1448"
+                height="1086"
+                loading="lazy"
+              />
+            </figure>
           </div>
+        </div>
+      </section>
+
+      <section id="gestures">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Hand gestures · Experimental · iPad</p>
+            <h2>Play your music without touching the screen.</h2>
+            <p>
+              Hands covered in flour, or the iPad across the room? Raise an open hand and Runout follows it. Point at an
+              album to play it, grab covers and throw them, or skip a track with a swipe in the air.
+            </p>
+          </div>
+          <div class="gesture-columns">
+            <div class="gesture-group">
+              <h3>In Ambient Mode</h3>
+              <ol class="gestures">
+                <li><span class="hand" aria-hidden="true">✋</span><div><strong>Wake it up</strong><p>Show an open hand for half a second and a soft pointer appears.</p></div></li>
+                <li><span class="hand" aria-hidden="true">✋</span><div><strong>Play an album</strong><p>Hold your hand over a cover until the ring fills. It starts after a short countdown.</p></div></li>
+                <li><span class="hand" aria-hidden="true">👋</span><div><strong>Change your mind</strong><p>Swipe sideways during the countdown to cancel.</p></div></li>
+                <li><span class="hand" aria-hidden="true">✊</span><div><strong>Grab and throw</strong><p>Close your fist over a floating cover to drag it, open your hand to let it fly.</p></div></li>
+              </ol>
+            </div>
+            <div class="gesture-group">
+              <h3>On the player</h3>
+              <ol class="gestures">
+                <li><span class="hand" aria-hidden="true">✋</span><div><strong>Press the buttons</strong><p>Hold your hand over previous, play/pause or next for a second.</p></div></li>
+                <li><span class="hand" aria-hidden="true">👉</span><div><strong>Next track</strong><p>A quick swipe to the right.</p></div></li>
+                <li><span class="hand" aria-hidden="true">👈</span><div><strong>Previous track</strong><p>A quick swipe to the left.</p></div></li>
+                <li><span class="hand" aria-hidden="true">✊</span><div><strong>Pause or resume</strong><p>Hold a closed fist for a second.</p></div></li>
+              </ol>
+            </div>
+          </div>
+          <p class="gesture-privacy">
+            Off by default. When you turn it on, Runout uses the front camera only while Ambient Mode is on screen. Every
+            frame is analyzed on the iPad and discarded at once: no image or video is ever stored or sent.
+            <a href="privacy.html#gestures">Privacy details</a>
+          </p>
         </div>
       </section>
 

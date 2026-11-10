@@ -6,7 +6,7 @@
     <title>Privacy Policy — Runout</title>
     <meta
       name="description"
-      content="How Runout handles your data: no accounts, no tracking, tokens kept in your device secure storage."
+      content="How Runout handles your data: no accounts, no advertising tracking, optional anonymous usage statistics, tokens kept in your device secure storage."
     />
     <meta property="og:title" content="Runout — Every album, to the last groove" />
     <meta property="og:description" content="Your saved albums as a warm, physical-feeling record shelf on iPad and Android tablets." />
@@ -33,21 +33,47 @@
     <main class="doc"><div class="wrap">
         <p class="eyebrow">Privacy</p>
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: November 9, 2026</p>
+        <p class="updated">Last updated: November 10, 2026</p>
         <p>Runout is designed to keep your music and your accounts on your device. This policy explains what the app handles and why.</p>
 
         <h2>What Runout does not collect</h2>
         <ul>
-          <li>Runout has no user accounts of its own and no servers that receive your data.</li>
+          <li>Runout has no user accounts of its own and runs no servers of its own.</li>
           <li>Runout never sees or stores your TIDAL, Apple Music or Spotify password. You sign in through each service's official authorization screen.</li>
-          <li>Runout does not include analytics, advertising or tracking SDKs, and does not sell or share personal data.</li>
+          <li>Runout does not show ads, does not use the advertising identifier of your device (IDFA or Android advertising ID), does not track you across other apps or websites, and does not sell personal data.</li>
+          <li>Runout never sends the albums, artists, playlists or shelf names in your collection, nor anything about your music accounts, to anyone other than the music service itself.</li>
+        </ul>
+
+        <h2>Anonymous usage statistics</h2>
+        <p>
+          To learn which features are used and to fix problems, Runout uses Google Analytics for Firebase. It records
+          product events such as “a service was connected”, “an album was opened in TIDAL”, “Spin was used” or “Ambient
+          Mode started”, together with coarse settings like the collection view or whether night dimming is on.
+        </p>
+        <ul>
+          <li>Firebase assigns a random app-instance identifier and collects standard technical data: device model, operating system and app version, language, approximate country derived from the IP address, and session timing.</li>
+          <li>These statistics are not linked to your identity, your music accounts or your email, and are not used for advertising.</li>
+          <li>You can turn this off at any time in Runout › Settings › Privacy › <em>Share anonymous usage data</em>. Turning it off stops collection and resets the analytics data stored on your device.</li>
+          <li>Google processes this data on our behalf under the <a href="https://firebase.google.com/support/privacy">Firebase privacy terms</a>. Event data is kept for the shortest retention period Google Analytics offers.</li>
+        </ul>
+
+        <h2 id="gestures">Camera and hand gestures</h2>
+        <p>
+          Hand gestures are an optional, experimental feature on iPad and are off by default. If you turn them on, Runout
+          asks for permission to use the front camera and uses it only while Ambient Mode is on screen, to follow the
+          position and shape of one hand.
+        </p>
+        <ul>
+          <li>Each camera frame is analyzed on your device with Apple's Vision framework and discarded immediately. No photo, video or image of you is ever stored, sent anywhere or shared.</li>
+          <li>The camera turns off when you leave Ambient Mode, when Runout goes to the background or when you turn the feature off in Runout › Settings › Ambient mode. You can also withdraw camera access at any time in the iPad's Settings app.</li>
+          <li>Anonymous usage statistics only record which gesture was used (for example “track skipped by gesture”), never camera data.</li>
         </ul>
 
         <h2>Data stored on your device</h2>
         <ul>
           <li><strong>Sign-in tokens</strong> issued by the music services are kept in the secure storage of your device (iOS Keychain or Android Keystore) and are used only to talk to that service.</li>
           <li><strong>Library information</strong> such as album titles, artists, cover art links and tracklists is cached on your device so your collection opens instantly.</li>
-          <li><strong>Your preferences</strong>, including favorites, custom shelves, Ambient Mode and display settings, are stored locally.</li>
+          <li><strong>Your preferences</strong>, including favorites, custom shelves, Ambient Mode, display and usage data settings, are stored locally.</li>
         </ul>
         <p>Disconnecting a service in Runout removes its tokens and cached library from the app. Deleting the app removes everything it stored.</p>
 
