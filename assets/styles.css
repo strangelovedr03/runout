@@ -289,9 +289,13 @@ section { padding: 80px 0; }
 .gestures p { margin: 2px 0 0; color: var(--muted); font-size: 0.9rem; }
 .gesture-privacy { margin: 22px 0 0; max-width: 46rem; color: var(--muted); font-size: 0.88rem; }
 
+/* Ambient Mode: text, then the wide promotional image */
+.ambient-stack { display: grid; gap: 40px; }
+.ambient-stack .content { max-width: 40rem; }
+
 @media (max-width: 900px) {
   .ambient-split { grid-template-columns: 1fr; gap: 32px; }
-  .ambient-split.ambient { padding: 40px 20px; }
+  .ambient-split.ambient, .ambient-stack.ambient { padding: 40px 20px; }
   .gesture-columns { grid-template-columns: 1fr; }
   .gesture-group { padding: 20px; }
 }
