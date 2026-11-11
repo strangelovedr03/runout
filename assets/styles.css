@@ -176,7 +176,8 @@ section { padding: 80px 0; }
 .doc .updated { color: var(--muted); margin: 10px 0 36px; font-size: 0.9rem; }
 .doc h2 { font-size: 1.3rem; margin: 36px 0 10px; letter-spacing: -0.01em; }
 .doc p, .doc li { color: #d6d2cb; }
-.doc ul { padding-left: 20px; }
+.doc ul, .doc ol { padding-left: 20px; }
+.doc ol li { margin-bottom: 6px; color: #d6d2cb; }
 
 /* Footer */
 .site-footer { border-top: 1px solid var(--line); padding: 34px 0 48px; color: var(--muted); font-size: 0.84rem; }

@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@300;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/styles.css?v=3" />
+    <link rel="stylesheet" href="assets/styles.css?v=5" />
   </head>
   <body>
     <header class="site-header">
@@ -49,15 +49,27 @@
           TIDAL currently limits third-party apps to previews. Tap <strong>Play in TIDAL</strong> to listen to the full
           album in the official TIDAL app.
         </p>
-        <h3>Apple Music says it can't access my library.</h3>
+        <h3 id="apple-music-library">My Apple Music library doesn't appear (“We couldn't read your collection”).</h3>
+        <p>Runout reads the albums saved in your Apple Music library. On the iPad, check these in order:</p>
+        <ol>
+          <li><strong>Open the Music app once</strong> with the same Apple ID and accept its terms if it asks. Until you do, Apple doesn't let other apps read your library. This is the most common cause.</li>
+          <li>Turn on <strong>Settings › Music › Sync Library</strong>.</li>
+          <li>Make sure that Apple ID has an <strong>active Apple Music subscription</strong> and albums saved to its library.</li>
+          <li>Allow access in <strong>Settings › Privacy &amp; Security › Media &amp; Apple Music › Runout</strong>.</li>
+          <li>Back in Runout, close it completely, open it again and <strong>pull down on Collection</strong> to sync.</li>
+        </ol>
+        <h3 id="hand-gestures">Why don't I see hand gestures?</h3>
         <p>
-          Apple Music requires an active subscription with <strong>Settings › Music › Sync Library</strong> turned on.
-          Opening the Music app once to accept its terms can also help.
+          Hand gestures are an experimental <strong>Runout Pro</strong> feature that uses the iPad's front camera in Ambient
+          Mode. They need <strong>iPadOS 16 or later</strong>, so the option doesn't appear on iPads that stay on iPadOS 15,
+          such as the iPad Air 2 or iPad mini 4. On older iPads that do run iPadOS 16 they work, but may respond more slowly;
+          they're smoothest on iPads with an A12 Bionic chip or newer. Turn them on in
+          <strong>Settings › Ambient mode › Hand gestures</strong>.
         </p>
         <h3>When will Spotify be available?</h3>
         <p>Spotify support is coming soon.</p>
         <h3>How do I keep the tablet's screen on?</h3>
-        <p>Go to <strong>Settings › Dedicated display</strong> and turn on <strong>Keep screen on</strong>. You can also schedule night dimming there.</p>
+        <p>With Runout Pro, go to <strong>Settings › Dedicated display</strong> and turn on <strong>Keep screen on</strong>. You can also schedule night dimming there.</p>
 
         <h2>Privacy</h2>
         <p>Read how Runout handles your data in the <a href="privacy.html">Privacy Policy</a>.</p>
